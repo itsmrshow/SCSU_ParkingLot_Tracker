@@ -7,11 +7,12 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SCSU Parking Lot Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>SCSU Parking Tracker</title>
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/master.css" rel="stylesheet" type="text/css">
 <link href="css/menu.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/add2home.css">
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -25,18 +26,35 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+
+  <link rel="apple-touch-icon" href="../images/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/touch-icon-iphone4.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/touch-icon-ipad2.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<script type="text/javascript">
+
+var addToHomeConfig = {
+  autostart: false,
+  startDelay: 0
+};
+
+</script>
+<script type="application/javascript" src="src/add2home.js" charset="utf-8"></script>
 <script src="css/respond.min.js"></script>
 </head>
-<body>
+<body onload="addToHome.show(true); return false">
 <div class="gridContainer clearfix">
-  <div id="banner">
-  SCSU Parking Lot Tracker
-  </div>
+  <div id="banner"><img src="images/scsu.png" width="107" height="91"/>SCSU Parking Tracker</div>
   <div id="navigation">
      <ul id="menu-bar">
      <li><a href="index.php">Home</a>
      </li>
-     <li><a href="index.php">Tracker</a>
+     <li><a href="tracker.php">Tracker</a>
      </li>
      <li><a href="http://www.southernct.edu">SC Home</a>
      </li>

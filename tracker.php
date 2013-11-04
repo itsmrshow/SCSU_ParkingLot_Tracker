@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SCSU Parking Lot Tracker</title>
+<title>SCSU Parking Tracker</title>
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/master.css" rel="stylesheet" type="text/css">
 <link href="css/menu.css" rel="stylesheet" type="text/css">
@@ -29,21 +29,54 @@ Do the following if you're using your customized build of modernizr (http://www.
 </head>
 <body>
 <div class="gridContainer clearfix">
-  <div id="banner">
-  SCSU Parking Lot Tracker
-  </div>
+  <div id="banner"><img src="images/scsu.png" width="107" height="91"/>SCSU Parking Tracker</div>
   <div id="navigation">
      <ul id="menu-bar">
      <li><a href="index.php">Home</a>
      </li>
-     <li><a href="index.php">Tracker</a>
+     <li><a href="tracker.php">Tracker</a>
      </li>
      <li><a href="http://www.southernct.edu">SC Home</a>
      </li>
     </ul>
   </div>
   <div id="body">
-  Welcome to the SCSU Parking Tracker
+  	<div id="table" align="center">
+	<table>
+    	<tr>
+        	<th>
+            Lots
+            </th>
+            <th>
+            Status
+            </th>
+        </tr>
+    	<tr>
+            <td>
+            Lot 1
+            </td>
+            <td>
+            100%
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Lot 2
+            </td>
+            <td>
+            25%
+            </td>
+        </tr>
+        <tr>
+            <td>
+            Lot 3
+            </td>
+            <td>
+            50%
+            </td>
+        </tr>
+    </table>
+    </div>
   </div>
 </div>
 </body>
